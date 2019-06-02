@@ -1,6 +1,7 @@
-import React from 'react';
-import {Link} from 'gatsby';
-import styled from 'styled-components';
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
+import theme from "../theme";
 
 const Wrapper = styled.section`
   display: flex;
@@ -11,9 +12,12 @@ const Wrapper = styled.section`
 const Logo = styled.h1`
   color: ${props => props.theme.colors.black90};
   padding-top: ${props => props.theme.space[1]}px;
+  ${theme.textStyles.body}
 `;
 
-const ContactDetails = styled.div``;
+const ContactDetails = styled.div`
+  ${theme.textStyles.body}
+`;
 
 const Email = styled.div`
   display: block;
