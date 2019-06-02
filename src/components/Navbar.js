@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import theme from "../theme";
+import LinkTag from "../components/LinkTag";
 
 const Wrapper = styled.section`
   display: flex;
@@ -32,8 +33,13 @@ const Navbar = () => {
     <Wrapper>
       <Logo>Adam Parsons</Logo>
       <ContactDetails>
-        <Email>adamgeorgeparsons@gmail.com</Email>
-        <PhoneNumber>+44 7498 703 696</PhoneNumber>
+        <Email>
+          <LinkTag>adamgeorgeparsons@gmail.com</LinkTag>
+        </Email>
+
+        <PhoneNumber>
+          <LinkTag>+44 7498 703 696 </LinkTag>
+        </PhoneNumber>
       </ContactDetails>
     </Wrapper>
   );
