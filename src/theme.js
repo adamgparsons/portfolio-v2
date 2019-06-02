@@ -30,7 +30,7 @@ const theme = {
     },
     body: {
       fontSize: "20px",
-      lineHeight: "36px",
+      lineHeight: "28px",
       fontWeight: "regular"
     }
   },
