@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Custom font";
+  src: url("../fonts/Custom.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Custom font bold";
+  src: url("../fonts/Custom-bold.ttf") format("truetype");
+}
+
+body {
+  font-family: "Custom font", Helvetica, sans-serif;
+}

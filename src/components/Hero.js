@@ -11,8 +11,8 @@ const Wrapper = styled.div`
 
 const TagLine = styled.h2`
   ${theme.textStyles.heading2};
+  font-family: "Custom font bold";
   font-weight: bold;
-  padding-bottom: ${theme.space[5]}px;
 `;
 
 const Description = styled.p`
@@ -31,7 +31,6 @@ const Hero = () => {
           I focus on solving real world problems for users. I help companies do
           this by researching, designing, and validating with users.
         </p>
-        <br />
         <p>
           I currently work at Citizens Advice designing a platform that will
           provide advice to over 30 million UK citizens per year. I was

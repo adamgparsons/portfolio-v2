@@ -3,7 +3,7 @@ import theme from "../theme";
 
 const LinkTag = styled.a`
   color: inherit;
-  padding-bottom: 2px;
+  padding-bottom: 1px;
   border-bottom: 2px black solid;
   :hover {
     border-bottom: 2px red solid;

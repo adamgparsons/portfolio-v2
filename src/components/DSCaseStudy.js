@@ -6,9 +6,14 @@ const Button = styled.a`
   ${theme.textStyles.body}
   background-color:${theme.colors.gray};
   border-radius: ${theme.radii[2]};
-  padding: ${theme.space[1]}px ${theme.space[3]}px;
+  padding: ${theme.space[2]}px ${theme.space[4]}px;
   margin-top: ${theme.space[5]}px;
   color: ${theme.colors.white};
+  text-decoration: none;
+  transition: background-color 0.5s;
+  :hover {
+    background-color: ${theme.colors.darkGray}
+  }
 
 `;
 
@@ -53,10 +58,10 @@ const CaseStudyInfo = () => {
       <CompanyName>Citizens Advice</CompanyName>
       <CaseStudyName>Design System</CaseStudyName>
       <CaseStudyDescription>
-        Creating a design system to improve consitency, acceesibility and
+        Creating a design system to improve consitency, accessibility and
         performance for users.
       </CaseStudyDescription>
-      <Button href="http://google.com">Hello there</Button>
+      <Button href="http://google.com">View case study</Button>
     </InfoWrapper>
   );
 };

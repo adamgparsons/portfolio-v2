@@ -22,6 +22,7 @@ const ContactDetails = styled.div`
 
 const Email = styled.div`
   display: block;
+  margin-bottom: ${theme.space[3]}px;
 `;
 
 const PhoneNumber = styled.div`
