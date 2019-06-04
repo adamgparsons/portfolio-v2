@@ -1,11 +1,30 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import Content, { HTMLContent } from "../components/Content";
+import styled from "styled-components";
+import theme from "../theme";
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
+const MarkdownStyles = styled.div`
+  & h1 {
+    ${theme.textStyles.heading1}
+  }
+  & h2 {
+    ${theme.textStyles.heading2}
+  }
+
+  & h3 {
+    ${theme.textStyles.heading3}
+  }
+
+  & p {
+    ${theme.textStyles.body}
+  }
+`;
+
+export const CaseStudyTemplate = ({ title, content, contentComponent }) => {
+  const PageContent = contentComponent || Content;
 
   return (
     <section className="section section--gradient">
@@ -13,46 +32,46 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
+              <h1 className="title">{title}</h1>
               <PageContent className="content" content={content} />
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-AboutPageTemplate.propTypes = {
+CaseStudyTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
-  contentComponent: PropTypes.func,
-}
+  contentComponent: PropTypes.func
+};
 
-const AboutPage = ({ data }) => {
-  const { markdownRemark: post } = data
+const CaseStudy = ({ data }) => {
+  const { markdownRemark: post } = data;
 
   return (
     <Layout>
-      <AboutPageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        content={post.html}
-      />
+      <MarkdownStyles>
+        <CaseStudyTemplate
+          contentComponent={HTMLContent}
+          title={post.frontmatter.title}
+          content={post.html}
+        />
+      </MarkdownStyles>
     </Layout>
-  )
-}
+  );
+};
 
-AboutPage.propTypes = {
-  data: PropTypes.object.isRequired,
-}
+CaseStudy.propTypes = {
+  data: PropTypes.object.isRequired
+};
 
-export default AboutPage
+export default CaseStudy;
 
-export const aboutPageQuery = graphql`
-  query AboutPage($id: String!) {
+export const casestudyQuery = graphql`
+  query CaseStudyPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
@@ -60,4 +79,4 @@ export const aboutPageQuery = graphql`
       }
     }
   }
-`
+`;

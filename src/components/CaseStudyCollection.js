@@ -1,9 +1,15 @@
+import React, { Fragment } from "react";
 import styled from "styled-components";
 import DSCaseStudy from "./DSCaseStudy";
-import React from "react";
+import BRCCaseStudy from "./BRCCaseStudy";
 
 const CaseStudyCollection = () => {
-  return <DSCaseStudy />;
+  return (
+    <Fragment>
+      <DSCaseStudy />
+      <BRCCaseStudy />
+    </Fragment>
+  );
 };
 
 export default CaseStudyCollection;

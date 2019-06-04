@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import theme from "../theme";
-import LinkTag from "../components/LinkTag";
+import LinkTag from "./LinkTag";
 
 const Wrapper = styled.section`
   display: flex;
@@ -29,7 +29,7 @@ const PhoneNumber = styled.div`
   display: block;
 `;
 
-const Navbar = () => {
+const HeaderFooter = () => {
   return (
     <Wrapper>
       <Logo>Adam Parsons</Logo>
@@ -45,4 +45,4 @@ const Navbar = () => {
     </Wrapper>
   );
 };
-export default Navbar;
+export default HeaderFooter;

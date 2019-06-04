@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import HeaderFooter from "../components/HeaderFooter";
 import "../components/styles.css";
 import useSiteMetadata from "./SiteMetadata";
 import { ThemeProvider } from "styled-components";
@@ -48,9 +48,9 @@ const TemplateWrapper = ({ children }) => {
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
-        <Navbar color="red" />
-
+        <HeaderFooter />
         <div>{children}</div>
+        <HeaderFooter />
       </Wrapper>
     </ThemeProvider>
   );

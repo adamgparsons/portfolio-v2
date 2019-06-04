@@ -6,7 +6,7 @@ import LinkTag from "../components/LinkTag";
 
 const Wrapper = styled.div`
   margin-top: ${theme.space[7]}px;
-  margin-bottom: ${theme.space[7]}px;
+  margin-bottom: ${theme.space[6]}px;
 `;
 
 const TagLine = styled.h2`

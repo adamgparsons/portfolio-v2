@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React, { Component } from "react";
-import CaseStudyInfo from "../components/CaseStudyInfo";
+import CaseStudyInfo from "./CaseStudyInfo";
 import theme from "../theme";
 
 const Wrapper = styled.div`
@@ -11,25 +11,25 @@ const Wrapper = styled.div`
 
 const CaseStudyImage = styled.div`
   img {
-    transform: translateX(200px);
+    transform: translateX(-200px);
   }
 `;
-class DSCaseStudy extends Component {
+
+class BRCCaseStudy extends Component {
   render() {
     return (
       <Wrapper>
-        <CaseStudyInfo
-          companyName="Citizens Advice"
-          caseStudyName="Design system"
-          description="Creating a design system to improve consitency, accessibility and
-          performance for users."
-        />
         <CaseStudyImage>
           <img src="https://placeimg.com/640/480/any" />
         </CaseStudyImage>
+        <CaseStudyInfo
+          companyName="British Red Cross"
+          caseStudyName="Wheelchair service"
+          description="Using service design to transform the 100 year old mobility aid service."
+        />
       </Wrapper>
     );
   }
 }
 
-export default DSCaseStudy;
+export default BRCCaseStudy;
