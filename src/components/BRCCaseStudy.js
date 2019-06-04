@@ -26,6 +26,7 @@ class BRCCaseStudy extends Component {
           companyName="British Red Cross"
           caseStudyName="Wheelchair service"
           description="Using service design to transform the 100 year old mobility aid service."
+          link="/casestudy/wheelchair-service"
         />
       </Wrapper>
     );

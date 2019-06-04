@@ -1,7 +1,9 @@
+import React from "react";
 import styled from "styled-components";
 import theme from "../theme";
+import { Link } from "gatsby";
 
-const Button = styled.a`
+const Button = styled(props => <Link {...props} />)`
   ${theme.textStyles.body}
   background-color:${theme.colors.gray};
   border-radius: ${theme.radii[2]};

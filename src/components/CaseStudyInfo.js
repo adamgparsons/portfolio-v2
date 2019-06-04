@@ -32,12 +32,13 @@ class CaseStudyInfo extends Component {
     const companyName = this.props.companyName;
     const caseStudyName = this.props.caseStudyName;
     const description = this.props.description;
+    const link = this.props.link;
     return (
       <InfoWrapper>
         <CompanyName>{companyName}</CompanyName>
         <CaseStudyName>{caseStudyName}</CaseStudyName>
         <CaseStudyDescription>{description}</CaseStudyDescription>
-        <Button href="http://google.com">View case study</Button>
+        <Button to={link}>View case study</Button>
       </InfoWrapper>
     );
   }

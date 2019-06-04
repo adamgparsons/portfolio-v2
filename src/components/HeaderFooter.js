@@ -7,13 +7,23 @@ import LinkTag from "./LinkTag";
 const Wrapper = styled.section`
   display: flex;
   justify-content: space-between;
-  padding-top: ${props => props.theme.space[5]}px;
+  padding-top: ${theme.space[5]}px;
+  padding-bottom: ${theme.space[5]}px;
 `;
 
-const Logo = styled.h1`
-  color: ${props => props.theme.colors.black90};
-  padding-top: ${props => props.theme.space[1]}px;
+const Logo = styled(props => <Link {...props} />)`
+  color: ${theme.colors.black90};
+  padding-top: ${theme.space[1]}px;
+  text-decoration: none;
+  height: 28px;
   ${theme.textStyles.body}
+  padding-bottom: 1px;
+  border-bottom: 2px white solid;
+  transition: border-bottom 0.5s, background-color 0.5s;
+  :hover {
+    border-bottom: 2px black solid;
+    background-color: ${theme.colors.lightGreen};
+  }
 `;
 
 const ContactDetails = styled.div`
@@ -32,7 +42,7 @@ const PhoneNumber = styled.div`
 const HeaderFooter = () => {
   return (
     <Wrapper>
-      <Logo>Adam Parsons</Logo>
+      <Logo to="/">Adam Parsons</Logo>
       <ContactDetails>
         <Email>
           <LinkTag>adamgeorgeparsons@gmail.com</LinkTag>

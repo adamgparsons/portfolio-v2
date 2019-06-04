@@ -1,12 +1,16 @@
+import React from "react";
 import styled from "styled-components";
 import theme from "../theme";
+import { Link } from "gatsby";
 
-const LinkTag = styled.a`
+const LinkTag = styled(props => <Link {...props} />)`
+  text-decoration: none;
   color: inherit;
   padding-bottom: 1px;
   border-bottom: 2px black solid;
+  transition: background-color 0.25s;
   :hover {
-    border-bottom: 2px red solid;
+    background-color: ${theme.colors.lightGreen};
   }
 `;
 

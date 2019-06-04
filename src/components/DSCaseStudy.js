@@ -23,6 +23,7 @@ class DSCaseStudy extends Component {
           caseStudyName="Design system"
           description="Creating a design system to improve consitency, accessibility and
           performance for users."
+          link="/casestudy/design-system"
         />
         <CaseStudyImage>
           <img src="https://placeimg.com/640/480/any" />
