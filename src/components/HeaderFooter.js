@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "gatsby";
-import styled from "styled-components";
-import theme from "../theme";
-import LinkTag from "./LinkTag";
+import React from 'react';
+import {Link} from 'gatsby';
+import styled from 'styled-components';
+import theme from '../theme';
+import InternalLink from './InternalLink';
 
 const Wrapper = styled.section`
   display: flex;
@@ -45,11 +45,11 @@ const HeaderFooter = () => {
       <Logo to="/">Adam Parsons</Logo>
       <ContactDetails>
         <Email>
-          <LinkTag>adamgeorgeparsons@gmail.com</LinkTag>
+          <InternalLink>adamgeorgeparsons@gmail.com</InternalLink>
         </Email>
 
         <PhoneNumber>
-          <LinkTag>+44 7498 703 696 </LinkTag>
+          <InternalLink>+44 7498 703 696 </InternalLink>
         </PhoneNumber>
       </ContactDetails>
     </Wrapper>
