@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'gatsby';
 import styled from 'styled-components';
 import theme from '../theme';
-import InternalLink from './InternalLink';
+import ExternalLink from '../components/ExternalLink';
 
 const Wrapper = styled.section`
   display: flex;
@@ -45,12 +45,12 @@ const HeaderFooter = () => {
       <Logo to="/">Adam Parsons</Logo>
       <ContactDetails>
         <Email>
-          <InternalLink>adamgeorgeparsons@gmail.com</InternalLink>
+          <ExternalLink href="mailto:adamgeorgeparsons@gmail.com">
+            adamgeorgeparsons@gmail.com
+          </ExternalLink>
         </Email>
 
-        <PhoneNumber>
-          <InternalLink>+44 7498 703 696 </InternalLink>
-        </PhoneNumber>
+        <PhoneNumber>+44 7498 703 696</PhoneNumber>
       </ContactDetails>
     </Wrapper>
   );
