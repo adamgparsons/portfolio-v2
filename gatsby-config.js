@@ -2,8 +2,8 @@ var proxy = require("http-proxy-middleware");
 
 module.exports = {
   siteMetadata: {
-    title: "Gatsby + Netlify CMS Starter",
-    description: "This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution."
+    title: "Adam Parsons",
+    description: "Product designer based in London. I focus on solving real world problems for users. I help companies do this by researching, designing and validating with users."
   },
   plugins: [
     "gatsby-plugin-react-helmet",
