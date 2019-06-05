@@ -1,7 +1,8 @@
-import styled from "styled-components";
-import React, { Component } from "react";
-import theme from "../theme";
-import Button from "./Button";
+import styled from 'styled-components';
+import React, {Component} from 'react';
+import theme from '../theme';
+import Button from './Button';
+import Fade from 'react-reveal/Fade';
 
 const InfoWrapper = styled.div`
   max-width: 50%;
@@ -25,6 +26,7 @@ const CaseStudyDescription = styled.p`
   ${theme.textStyles.body}
   display:block;
   margin-top: ${theme.space[5]}px;
+  margin-bottom: ${theme.space[5]}px;
 `;
 
 class CaseStudyInfo extends Component {
@@ -35,10 +37,14 @@ class CaseStudyInfo extends Component {
     const link = this.props.link;
     return (
       <InfoWrapper>
-        <CompanyName>{companyName}</CompanyName>
-        <CaseStudyName>{caseStudyName}</CaseStudyName>
-        <CaseStudyDescription>{description}</CaseStudyDescription>
-        <Button to={link}>View case study</Button>
+        <Fade bottom>
+          <div>
+            <CompanyName> {companyName} </CompanyName>
+            <CaseStudyName> {caseStudyName} </CaseStudyName>
+            <CaseStudyDescription> {description} </CaseStudyDescription>
+            <Button to={link}> View case study </Button>
+          </div>
+        </Fade>
       </InfoWrapper>
     );
   }

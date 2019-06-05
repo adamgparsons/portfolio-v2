@@ -24,15 +24,15 @@ const Description = styled.p`
 const Hero = () => {
   return (
     <Wrapper>
-      <TagLine> I 'm Adam, a Product designer based in London.</TagLine>{' '}
+      <TagLine> I'm Adam, a Product designer based in London.</TagLine>{' '}
       <Description>
         <p>
-          I focus on solving real world problems for users.I help companies do this by researching,
+          I focus on solving real world problems for users. I help companies do this by researching,
           designing and validating with users.
         </p>
         <p>
           I currently work at Citizens Advice designing a platform that will provide advice to over
-          30 million UK citizens per year.I was previously working at British Red Cross{' '}
+          30 million UK citizens per year. I was previously working at British Red Cross{' '}
           <InternalLink to="/casestudy/wheelchair-service">
             redesigning their wheelchair service.
           </InternalLink>

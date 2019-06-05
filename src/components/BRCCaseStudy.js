@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import React, { Component } from "react";
-import CaseStudyInfo from "./CaseStudyInfo";
-import theme from "../theme";
+import styled from 'styled-components';
+import React, {Component} from 'react';
+import CaseStudyInfo from './CaseStudyInfo';
+import theme from '../theme';
 
 const Wrapper = styled.div`
   display: flex;
