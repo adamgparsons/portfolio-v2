@@ -39,7 +39,7 @@ class BRCCaseStudy extends Component {
     return (
       <Wrapper>
         <CaseStudyImage>
-          <img src="https://placeimg.com/640/480/any" />
+          <img src="https://placeimg.com/640/480/any" alt="British Red Cross wheelchair service" />
         </CaseStudyImage>
         <CaseStudyInfo
           companyName="British Red Cross"

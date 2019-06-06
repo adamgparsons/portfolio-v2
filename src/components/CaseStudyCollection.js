@@ -1,7 +1,6 @@
-import React, { Fragment } from "react";
-import styled from "styled-components";
-import DSCaseStudy from "./DSCaseStudy";
-import BRCCaseStudy from "./BRCCaseStudy";
+import React, {Fragment} from 'react';
+import DSCaseStudy from './DSCaseStudy';
+import BRCCaseStudy from './BRCCaseStudy';
 
 const CaseStudyCollection = () => {
   return (

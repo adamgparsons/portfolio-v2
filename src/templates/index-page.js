@@ -1,11 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
-import Hero from "../components/Hero";
-import Layout from "../components/Layout";
-import Features from "../components/Features";
-import BlogRoll from "../components/BlogRoll";
-import CaseStudyCollection from "../components/CaseStudyCollection";
+import React from 'react';
+import PropTypes from 'prop-types';
+import {graphql} from 'gatsby';
+import Hero from '../components/Hero';
+import Layout from '../components/Layout';
+import CaseStudyCollection from '../components/CaseStudyCollection';
 
 export const IndexPageTemplate = ({
   image,
@@ -34,8 +32,8 @@ IndexPageTemplate.propTypes = {
   })
 };
 
-const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
+const IndexPage = ({data}) => {
+  const {frontmatter} = data.markdownRemark;
 
   return (
     <Layout>
@@ -47,7 +45,7 @@ const IndexPage = ({ data }) => {
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
-      />{" "}
+      />{' '}
     </Layout>
   );
 };
@@ -64,7 +62,7 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+    markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
       frontmatter {
         title
         image {
