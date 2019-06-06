@@ -1,19 +1,31 @@
-import styled from "styled-components";
-import React, { Component } from "react";
-import CaseStudyInfo from "../components/CaseStudyInfo";
-import theme from "../theme";
+import styled from 'styled-components';
+import React, {Component} from 'react';
+import CaseStudyInfo from '../components/CaseStudyInfo';
+import theme from '../theme';
 
 const Wrapper = styled.div`
   display: flex;
   margin-top: ${theme.space[7]}px;
   margin-bottom: ${theme.space[7]}px;
+  @media only screen and (max-width: ${theme.breakpoints[0]}) {
+    flex-direction: column;
+  }
 `;
 
 const CaseStudyImage = styled.div`
+  @media only screen and (max-width: ${theme.breakpoints[0]}) {
+    margin-top: ${theme.space[6]}px;
+  }
   img {
     transform: translateX(200px);
+    @media only screen and (max-width: ${theme.breakpoints[0]}) {
+      transform: translateX(0px);
+      margin-left: -${theme.space[2]}px;
+      margin-right: -${theme.space[2]}px;
+    }
   }
 `;
+
 class DSCaseStudy extends Component {
   render() {
     return (
@@ -22,7 +34,9 @@ class DSCaseStudy extends Component {
           companyName="Citizens Advice"
           caseStudyName="Design system"
           description="Creating a design system to improve consitency, accessibility and
-          performance for users."
+      performance
+      for users.
+      "
           link="/casestudy/design-system"
         />
         <CaseStudyImage>

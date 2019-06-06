@@ -8,6 +8,13 @@
   src: url("../fonts/Custom-bold.ttf") format("truetype");
 }
 
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Custom font", Helvetica, sans-serif;
+  position: relative;
 }

@@ -7,11 +7,22 @@ const Wrapper = styled.div`
   display: flex;
   margin-top: ${theme.space[7]}px;
   margin-bottom: ${theme.space[7]}px;
+  @media only screen and (max-width: ${theme.breakpoints[0]}) {
+    flex-direction: column-reverse;
+  }
 `;
 
 const CaseStudyImage = styled.div`
+  @media only screen and (max-width: ${theme.breakpoints[0]}) {
+    margin-top: ${theme.space[6]}px;
+  }
   img {
     transform: translateX(-200px);
+    @media only screen and (max-width: ${theme.breakpoints[0]}) {
+      transform: translateX(0px);
+      margin-left: -${theme.space[2]}px;
+      margin-right: -${theme.space[2]}px;
+    }
   }
 `;
 

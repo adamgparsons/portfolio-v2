@@ -1,5 +1,5 @@
 const theme = {
-  breakpoints: ["30em", "60em"],
+  breakpoints: ["500px", "1000px"],
   space: [0, 4, 8, 16, 24, 32, 64, 128, 256, 512],
   fontSizes: [12, 16, 20, 24, 36, 48, 80, 96, 128],
   borderWidths: [0, "1px", "2px", "4px", "8px", "16px", "32px"],
@@ -8,8 +8,7 @@ const theme = {
   measures: ["20em", "30em", "34em"],
   typefaces: {
     serif: "athelas, georgia, times, serif",
-    sansSerif:
-      'system-ui, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif',
+    sansSerif: 'system-ui, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif',
     mono: "Consolas, monaco, monospace"
   },
   textStyles: {

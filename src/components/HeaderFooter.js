@@ -9,6 +9,10 @@ const Wrapper = styled.section`
   justify-content: space-between;
   padding-top: ${theme.space[5]}px;
   padding-bottom: ${theme.space[5]}px;
+  @media only screen and (max-width: ${theme.breakpoints[0]}) {
+    display: block;
+    padding-top: ${theme.space[3]}px;
+  }
 `;
 
 const Logo = styled(props => <Link {...props} />)`
@@ -28,11 +32,14 @@ const Logo = styled(props => <Link {...props} />)`
 
 const ContactDetails = styled.div`
   ${theme.textStyles.body}
+  @media only screen and (max-width: 600px) {
+    margin-top: ${theme.space[2]}px;
+  }
 `;
 
 const Email = styled.div`
   display: block;
-  margin-bottom: ${theme.space[3]}px;
+  margin-bottom: ${theme.space[2]}px;
 `;
 
 const PhoneNumber = styled.div`
