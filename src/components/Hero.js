@@ -31,7 +31,7 @@ const Hero = () => {
         </p>
         <p>
           I currently work at Citizens Advice designing a platform that will provide advice to over
-          30 million UK citizens per year. I was previously working at British Red Cross{' '}
+          5 million UK citizens per year. I was previously working at British Red Cross{' '}
           <InternalLink to="/casestudy/wheelchair-service">
             redesigning their wheelchair service.
           </InternalLink>
