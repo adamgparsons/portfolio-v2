@@ -7,18 +7,25 @@ const Wrapper = styled.div`
   display: flex;
   margin-top: ${theme.space[7]}px;
   margin-bottom: ${theme.space[7]}px;
-  @media only screen and (max-width: ${theme.breakpoints[0]}) {
+  @media only screen and (max-width: ${theme.breakpoints[1]}) {
     flex-direction: column;
   }
 `;
 
 const CaseStudyImage = styled.div`
-  @media only screen and (max-width: ${theme.breakpoints[0]}) {
+  @media only screen and (max-width: ${theme.breakpoints[1]}) {
     margin-top: ${theme.space[6]}px;
+  }
+  @media only screen and (max-width: ${theme.breakpoints[2]}) {
+    max-width: 50%;
   }
   img {
     transform: translateX(200px);
-    @media only screen and (max-width: ${theme.breakpoints[0]}) {
+    @media only screen and (max-width: ${theme.breakpoints[2]}) {
+      transform: translateX(100px);
+    }
+
+    @media only screen and (max-width: ${theme.breakpoints[1]}) {
       transform: translateX(0px);
       margin-left: -${theme.space[2]}px;
       margin-right: -${theme.space[2]}px;

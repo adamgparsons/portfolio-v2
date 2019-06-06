@@ -16,18 +16,18 @@ const TagLine = styled.h2`
 
 const Description = styled.p`
   ${theme.textStyles.heading2}
-  @media only screen and (max-width: 800px) {
-    font-size: 24px;
+  @media only screen and (max-width: ${theme.breakpoints[1]}) {
+    ${theme.textStyles.heading3}
   }
 `;
 
 const Hero = () => {
   return (
     <Wrapper>
-      <TagLine>I'm Adam, a Product designer based in London.</TagLine>
+      <TagLine> I'm Adam, a Product designer based in London.</TagLine>
       <Description>
         <p>
-          I focus on solving real world problems for users. I help companies do this by researching,
+          I focus on solving real world problems for users.I help companies do this by researching,
           designing and validating with users.
         </p>
         <p>

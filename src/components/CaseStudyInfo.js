@@ -10,12 +10,8 @@ const InfoWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-  @media only screen and (min-width: ${theme.breakpoints[0]}) {
+  @media only screen and (max-width: ${theme.breakpoints[1]}) {
     max-width: 100%;
-  }
-  @media only screen and (min-width: ${theme.breakpoints[0]}) and (max-width: ${theme
-      .breakpoints[1]}) {
-    max-width: 75%;
   }
 `;
 

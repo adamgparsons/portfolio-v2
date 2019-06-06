@@ -1,5 +1,5 @@
 const theme = {
-  breakpoints: ["500px", "1000px"],
+  breakpoints: ["500px", "750px", "1000px"],
   space: [0, 4, 8, 16, 24, 32, 64, 128, 256, 512],
   fontSizes: [12, 16, 20, 24, 36, 48, 80, 96, 128],
   borderWidths: [0, "1px", "2px", "4px", "8px", "16px", "32px"],
@@ -30,12 +30,12 @@ const theme = {
     },
     heading3: {
       fontSize: "24px",
-      lineHeight: "36px",
+      lineHeight: "34px",
       fontWeight: "regular"
     },
     body: {
       fontSize: "20px",
-      lineHeight: "28px",
+      lineHeight: "32px",
       fontWeight: "regular",
       color: "#333",
       marginTop: "0px",
