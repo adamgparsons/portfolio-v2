@@ -44,6 +44,7 @@ const Email = styled.div`
 
 const PhoneNumber = styled.div`
   display: block;
+  text-decoration: none;
 `;
 
 const HeaderFooter = () => {
