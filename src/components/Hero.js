@@ -11,7 +11,6 @@ const Wrapper = styled.div`
 const TagLine = styled.h2`
   ${theme.textStyles.heading2};
   font-family: 'Custom font bold';
-  font-weight: bold;
 `;
 
 const Description = styled.p`

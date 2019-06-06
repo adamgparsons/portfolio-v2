@@ -16,5 +16,7 @@ body {
 
 body {
   font-family: "Custom font", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   position: relative;
 }
