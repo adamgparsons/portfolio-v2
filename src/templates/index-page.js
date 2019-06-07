@@ -5,17 +5,9 @@ import Hero from '../components/Hero';
 import Layout from '../components/Layout';
 import CaseStudyCollection from '../components/CaseStudyCollection';
 
-export const IndexPageTemplate = ({
-  image,
-  title,
-  heading,
-  subheading,
-  mainpitch,
-  description,
-  intro
-}) => (
+export const IndexPageTemplate = ({intro, title}) => (
   <div>
-    <Hero />
+    <Hero intro={intro} />
     <CaseStudyCollection />
   </div>
 );
@@ -24,11 +16,9 @@ IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
   intro: PropTypes.shape({
-    blurbs: PropTypes.array
+    tagline: PropTypes.string,
+    description: PropTypes.string
   })
 };
 
@@ -65,32 +55,8 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
       frontmatter {
         title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        heading
-        subheading
-        mainpitch {
-          title
-          description
-        }
-        description
         intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
+          tagline
           description
         }
       }
