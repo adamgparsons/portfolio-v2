@@ -31,7 +31,7 @@ const IndexPage = ({data}) => {
         image={frontmatter.image}
         title={frontmatter.title}
         intro={frontmatter.intro}
-      />{' '}
+      />
     </Layout>
   );
 };
