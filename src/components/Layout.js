@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import HeaderFooter from '../components/HeaderFooter';
-import '../components/styles.css';
+// import '../components/styles.css';
 import useSiteMetadata from './SiteMetadata';
 import {ThemeProvider} from 'styled-components';
 import Wrapper from './Wrapper';

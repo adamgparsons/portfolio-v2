@@ -5,8 +5,10 @@ module.exports = {
     title: "Adam Parsons",
     description: "Product designer based in London. I focus on solving real world problems for users. I help companies do this by researching, designing and validating with users."
   },
-  plugins: [
-    "gatsby-plugin-styled-components",
+  plugins: [{
+      resolve: "gatsby-plugin-styled-components",
+      options: {}
+    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     {
