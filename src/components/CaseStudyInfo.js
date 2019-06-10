@@ -28,8 +28,9 @@ const CaseStudyName = styled.h3`
 const CaseStudyDescription = styled.p`
   ${theme.textStyles.body}
   display:block;
+  line-height: 28px;
   margin-top: ${theme.space[5]}px;
-  margin-bottom: ${theme.space[5]}px;
+  margin-bottom: ${theme.space[6]}px;
 `;
 
 class CaseStudyInfo extends Component {
@@ -45,7 +46,7 @@ class CaseStudyInfo extends Component {
             <CompanyName> {companyName} </CompanyName>
             <CaseStudyName> {caseStudyName} </CaseStudyName>
             <CaseStudyDescription> {description} </CaseStudyDescription>
-            <Button to={link}> View case study </Button>
+            <Button to={link}>View case study</Button>
           </div>
         </Fade>
       </InfoWrapper>

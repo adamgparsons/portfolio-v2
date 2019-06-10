@@ -1,7 +1,7 @@
 const theme = {
   breakpoints: ["500px", "750px", "1000px"],
   space: [0, 4, 8, 16, 24, 32, 64, 128, 256, 512],
-  fontSizes: [12, 16, 20, 24, 36, 48, 80, 96, 128],
+  fontSizes: [14, 16, 20, 24, 36, 48, 80, 96, 128],
   borderWidths: [0, "1px", "2px", "4px", "8px", "16px", "32px"],
   radii: [0, "2px", "4px", "16px", "9999px", "100%"],
   lineHeights: ["1.0", "1.25", "1.5"],

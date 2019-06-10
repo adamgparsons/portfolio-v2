@@ -6,7 +6,6 @@ import theme from '../theme';
 const Wrapper = styled.div`
   display: flex;
   margin-top: ${theme.space[7]}px;
-  margin-bottom: ${theme.space[7]}px;
   @media only screen and (max-width: ${theme.breakpoints[1]}) {
     flex-direction: column;
   }
@@ -42,12 +41,13 @@ class DSCaseStudy extends Component {
           caseStudyName="Design system"
           description="Creating a design system to improve consitency, accessibility and
       performance
-      for users."
+      for users.
+      "
           link="/casestudy/design-system"
         />
         <CaseStudyImage>
           <img src="https://placeimg.com/640/480/any" alt="Citizens Advice Design system" />
-        </CaseStudyImage>
+        </CaseStudyImage>{' '}
       </Wrapper>
     );
   }

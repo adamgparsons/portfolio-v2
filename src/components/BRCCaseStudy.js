@@ -5,10 +5,10 @@ import theme from '../theme';
 
 const Wrapper = styled.div`
   display: flex;
-  margin-top: ${theme.space[7]}px;
   margin-bottom: ${theme.space[7]}px;
   @media only screen and (max-width: ${theme.breakpoints[1]}) {
     flex-direction: column-reverse;
+    margin-top: ${theme.space[6]}px;
   }
 `;
 
@@ -44,7 +44,7 @@ class BRCCaseStudy extends Component {
         <CaseStudyInfo
           companyName="British Red Cross"
           caseStudyName="Wheelchair service"
-          description="Using service design to transform the 100 year old mobility aid service."
+          description="Using service design to transform the 100 year-old mobility aid service."
           link="/casestudy/wheelchair-service"
         />
       </Wrapper>
